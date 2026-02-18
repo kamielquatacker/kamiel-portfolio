@@ -1,0 +1,68 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 24px var(--gutter);
+}
+
+.nav-brand {
+  font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  align-items: center;
+}
+
+.nav-prompt {
+  color: var(--accent);
+}
+
+.nav-sep,
+.nav-path,
+.nav-caret {
+  color: var(--muted);
+}
+
+.nav-caret {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.nav-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1em;
+  margin-left: 6px;
+  background: var(--accent);
+  transform: translateY(2px);
+  animation: blink 4s infinite ease-in-out;
+}
+
+@keyframes blink {
+  0%   { opacity: 0; }
+  10%  { opacity: 1; }   /* fade in */
+  70%  { opacity: 1; }   /* blijft aan */
+  85%  { opacity: 0; }   /* fade uit */
+  100% { opacity: 0; }   /* blijft uit tot reset */
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.nav a {
+  transition: color 200ms ease-in-out;
+}
+
+.nav a:hover {
+  color: var(--accent) ;
+}

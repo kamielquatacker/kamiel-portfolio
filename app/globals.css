@@ -1,0 +1,132 @@
+:root {
+  --bg: #f7f6f2;
+  --bg-2: #efeeea;
+  --surface: #ffffff;
+  --text: #1f1f1f;
+  --muted: #6b6b6b;
+  --accent: #ffb800;
+  --accent-dark: #d89b00;
+  --border: #e2e2e2;
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.08);
+  --radius-lg: 24px;
+  --radius-md: 12px;
+  --content-max: 1100px;
+  --gutter: 24px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background:
+    radial-gradient(900px 480px at 10% -10%, rgba(255, 184, 0, 0.16), transparent 60%),
+    radial-gradient(800px 420px at 90% 10%, rgba(0, 0, 0, 0.08), transparent 60%),
+    linear-gradient(180deg, var(--bg), var(--bg-2));
+  min-height: 100vh;
+  font-family: var(--font-sans), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.55;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 32px var(--gutter) 80px;
+}
+
+
+
+.hero {
+  padding: 48px 0 56px;
+}
+
+.hero h1 {
+  font-size: clamp(28px, 5vw, 46px);
+  line-height: 1.05;
+  margin: 0 0 14px;
+  letter-spacing: -0.02em;
+}
+
+.hero p {
+  max-width: 680px;
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 14px;
+  transition: border-color 200ms ease, color 200ms ease;
+}
+
+.btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+
+
+.section {
+  padding: 36px 0;
+}
+
+.section-title {
+  font-size: 20px;
+  margin: 0 0 18px;
+  letter-spacing: 0.02em;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  box-shadow: var(--shadow);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.12);
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
