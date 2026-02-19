@@ -17,6 +17,10 @@ export default function Nav() {
         <span className={styles["nav-sep"]}>:</span>
         <span className={styles["nav-path"]}>~{pathLabel}</span>
         <span className={styles["nav-caret"]}>$</span>
+        
+        <span className={styles["nav-command"]} aria-hidden="true">
+          cd ~
+        </span>
         <span className={styles["nav-cursor"]} aria-hidden="true" />
       </Link>
       <div className={styles["nav-links"]}>

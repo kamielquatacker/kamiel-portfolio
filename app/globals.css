@@ -51,8 +51,6 @@ a {
   padding: 32px var(--gutter) 80px;
 }
 
-
-
 .hero {
   padding: 48px 0 56px;
 }
@@ -76,6 +74,15 @@ a {
   flex-wrap: wrap;
   gap: 12px;
 }
+
+
+.projects-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
 
 .btn {
   display: inline-flex;
@@ -102,9 +109,10 @@ a {
 
 .section-title {
   font-size: 20px;
-  margin: 0 0 18px;
   letter-spacing: 0.02em;
 }
+
+
 
 .card {
   background: var(--surface);
