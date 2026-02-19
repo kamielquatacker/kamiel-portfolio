@@ -10,16 +10,18 @@
 }
 
 .nav-brand {
+  display: inline-flex;
+  align-items: center;
   font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
   font-size: 14px;
   letter-spacing: 0.02em;
   line-height: 1;
-  align-items: center;
 }
 
 .nav-prompt {
   color: var(--accent);
+  display: inline-block;
 }
 
 .nav-sep,
@@ -39,8 +41,17 @@
   height: 1em;
   margin-left: 6px;
   background: var(--accent);
-  transform: translateY(2px);
+  transform: translateY(1px);
   animation: blink 4s infinite ease-in-out;
+}
+
+.nav-command {
+  display: inline-block;
+  width: 0;
+  color: var(--muted);
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 0;
 }
 
 @keyframes blink {
@@ -65,4 +76,22 @@
 
 .nav a:hover {
   color: var(--accent) ;
+}
+
+@keyframes typeCommand {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    width: 4ch;
+    opacity: 1;
+  }
+}
+
+.nav-brand:hover .nav-command {
+  animation: typeCommand 600ms steps(4, end) forwards;
 }

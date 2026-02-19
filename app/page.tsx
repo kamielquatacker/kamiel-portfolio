@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faFileArrowDown, faStar } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -27,7 +27,17 @@ export default function Home() {
       </header>
 
       <section className="section" id="projects">
-        <h2 className="section-title">Featured Projects</h2>
+        <div className="projects-header">
+          <h2 className="section-title">
+            <FontAwesomeIcon icon={faStar} />
+            <span>Featured Projects</span>
+          </h2>
+          <a href="/projects">
+            <span className="">View all </span>
+            <FontAwesomeIcon icon={faArrowRight} />
+          </a>
+        </div>
+        
         <div className="grid">
           <div className="card">Project placeholder</div>
           <div className="card">Project placeholder</div>
