@@ -1,0 +1,21 @@
+.project-card{
+  max-width: 520px;
+}
+
+.project-card h3 {
+  margin: 4px 0 0;
+}
+
+.project-card p {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0 0 12px;
+}
+
+.project-image img{
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  height: 12em;
+}
