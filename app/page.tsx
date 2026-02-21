@@ -1,6 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faArrowRight, faFileArrowDown, faStar } from "@fortawesome/free-solid-svg-icons";
+import { projects } from '@/data/projects';
+import ProjectCard from '@/components/ProjectCard';
+
+const featuredProjects = projects.filter(p => p.featured);
 
 export default function Home() {
   return (
@@ -23,24 +27,25 @@ export default function Home() {
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
         </div>
-        
+
       </header>
 
       <section className="section" id="projects">
         <div className="projects-header">
           <h2 className="section-title">
-            <FontAwesomeIcon icon={faStar} />
+            <FontAwesomeIcon className="section-title-icon" icon={faStar} />
             <span>Featured Projects</span>
           </h2>
-          <a href="/projects">
+          <a href="/projects" className="view-all-link">
             <span className="">View all </span>
             <FontAwesomeIcon icon={faArrowRight} />
           </a>
         </div>
-        
+
         <div className="grid">
-          <div className="card">Project placeholder</div>
-          <div className="card">Project placeholder</div>
+          {featuredProjects.map(project => (
+            <ProjectCard key={project.slug} project={project} />
+          ))}
         </div>
       </section>
 
