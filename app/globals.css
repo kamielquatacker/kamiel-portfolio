@@ -218,6 +218,138 @@ a {
   height: auto;
 }
 
+
+.tab-headers {
+  display: flex;
+  position: relative;
+  background-color: #e2e2e2;
+  margin-bottom: 1rem;
+  height: 36px;
+  border-radius: var(--radius-sm);
+}
+
+.tab-slider {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(50% - 4px);
+  height: calc(100% - 8px);
+  background-color: var(--bg-2);
+  border-radius: 6px;
+  transition: transform 0.4s ease;
+  z-index: 0;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 4px;
+  border-radius: 6px;
+  transition: all 0.3s;
+  width: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.tab-content {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1rem ;
+}
+
+/* Experience Items */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.experience-item {
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.experience-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.company-logo {
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.experience-header-content {
+  flex: 1;
+}
+
+.company-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  line-height: 1.2;
+}
+
+.company-name a {
+  color: var(--text);
+  transition: color 0.2s;
+}
+
+.company-name a:hover {
+  color: var(--accent-dark);
+}
+
+.role-title {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.period {
+  color: var(--muted);
+  font-size: 14px;
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+.position-details ul,
+.additional-position ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.position-details li,
+.additional-position li {
+  margin-bottom: 8px;
+}
+
+.additional-position {
+  margin-top: 16px;
+}
+
+.position-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  gap: 12px;
+}
+
+
+
 .card {
   display: block;
   border: 1px solid var(--border);
