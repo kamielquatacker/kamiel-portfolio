@@ -2,12 +2,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import {
   faArrowRight,
+  faEnvelope,
   faFileArrowDown,
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
 import { projects } from "@/data/projects";
-import { experiences } from '@/data/experience';
-import { education } from '@/data/education';
+import { experiences } from "@/data/experience";
+import { education } from "@/data/education";
 import ProjectCard from "@/components/ProjectCard";
 import ExperienceItem from "@/components/ExperienceItem";
 import TabView from "@/components/TabView";
@@ -29,7 +30,7 @@ export default function Home() {
           ideas into real, working products.
         </p>
         <div className="hero-buttons">
-          <a className="btn" href="/resume.pdf" download>
+          <a className="resume-link btn" href="/resume.pdf" download>
             <span>Resume</span>
             <FontAwesomeIcon icon={faFileArrowDown} />
           </a>
@@ -48,6 +49,9 @@ export default function Home() {
             rel="noreferrer"
           >
             <FontAwesomeIcon icon={faLinkedinIn} />
+          </a>
+          <a className="btn" href="mailto:kamiel.quatacker@gmail.com">
+            <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </div>
       </header>
