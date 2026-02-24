@@ -19,3 +19,10 @@
   object-fit: cover;
   height: 12em;
 }
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}

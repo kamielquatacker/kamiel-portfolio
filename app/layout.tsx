@@ -19,7 +19,7 @@ const plex = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kamiel Quatacker | Portfolio",
+  title: "Kamiel Quatacker",
   description: "Software Developer",
 };
 
