@@ -33,3 +33,11 @@
   color: var(--muted);
   border-color: var(--border);
 }
+
+@media (max-width: 640px) {
+  .footer {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}

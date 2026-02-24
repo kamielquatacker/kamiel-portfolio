@@ -3,6 +3,7 @@ import { IBM_Plex_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import MobileActiveCard from "@/components/MobileActiveCard";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 const space = Space_Grotesk({
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body>
         <div className="page">
           <Nav />
+          <MobileActiveCard />
           {children}
           <Footer />
         </div>
