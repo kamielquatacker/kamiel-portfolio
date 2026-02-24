@@ -1,0 +1,35 @@
+.footer {
+  width: min(
+    calc(var(--content-max) - var(--gutter) * 2),
+    calc(100% - (var(--gutter) * 2))
+  );
+
+  margin: 0 auto 1rem;
+  padding: 1rem var(--gutter);
+
+  background-color: #e2e2e2;
+  border-radius: var(--radius-md);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--muted);
+
+  margin-top: auto;
+}
+
+.footer-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.2rem;
+  color: var(--muted);
+  border-color: var(--border);
+}

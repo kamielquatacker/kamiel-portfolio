@@ -3,8 +3,8 @@
   --bg-2: #efeeea;
   --surface: #ffffff;
   --text: #1f1f1f;
-  --muted: #6b6b6b;
-  --accent: #ffb800;
+  --muted: #575757;
+  --accent: #fcb600;
   --accent-dark: #d89b00;
   --border: #dadada;
   --shadow: 0 24px 60px rgba(0, 0, 0, 0.08);
@@ -46,6 +46,16 @@ body {
   line-height: 1.55;
 }
 
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -60,10 +70,6 @@ a {
   margin: 0 auto;
   padding: 32px var(--gutter) 80px;
 }
-
-/* .container a {
-  color: var(--accent);
-} */
 
 .hero {
   padding: 84px 0 56px;
@@ -97,9 +103,18 @@ a {
   margin-bottom: 20px;
 }
 
-.project-links svg {
-  height: 20px;
+.hero-buttons .btn, .project-links a {
+  height: 2.2rem;
+  width: 2.5rem;
+  font-size: medium;
 }
+
+.resume-link{
+  height: 2.2rem !important;
+  width: auto !important;
+  padding: 0 1rem !important;
+}
+
 
 .projects-header {
   display: flex;
@@ -131,8 +146,8 @@ a {
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  padding: 8px 12px;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   color: var(--text);
@@ -280,7 +295,6 @@ a {
 }
 
 .experience-item, .education-item {
-  /* padding-bottom: 24px; */
   margin: 0 0 0 40px;
   position: relative;
 }
@@ -393,6 +407,8 @@ a {
   gap: 16px;
   justify-content: center;
 }
+
+/* About */
 
 @media (min-width: 800px) {
   .grid {
