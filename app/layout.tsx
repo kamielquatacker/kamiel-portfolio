@@ -22,6 +22,9 @@ const plex = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "Kamiel Quatacker",
   description: "Software Developer",
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({
