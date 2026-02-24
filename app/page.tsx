@@ -77,22 +77,22 @@ export default function Home() {
               id: "experience",
               label: "Experience",
               content: (
-                <div className="experience-list">
+                <ul className="experience-list">
                   {experiences.map((exp) => (
                     <ExperienceItem key={exp.id} experience={exp} />
                   ))}
-                </div>
+                </ul>
               ),
             },
             {
               id: "education",
               label: "Education",
               content: (
-                <div className="education-list">
+                <ul className="education-list">
                   {education.map((edu) => (
                     <EducationItem key={edu.id} education={edu} />
                   ))}
-                </div>
+                </ul>
               ),
             },
           ]}

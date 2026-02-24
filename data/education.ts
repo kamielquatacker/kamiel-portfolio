@@ -14,7 +14,7 @@ export const education: Education[] = [
   {
     id: "pxl",
     school: "PXL University of Applied Sciences",
-    degree: "Graduate in Programming",
+    degree: "Graduate Diploma in Programming",
     field: "Software Development",
     period: "2022 - 2025",
     logo: "/logos/pxl.png",
