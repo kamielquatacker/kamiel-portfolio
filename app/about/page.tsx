@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -24,10 +25,11 @@ export default function AboutPage() {
           </p>
           {/* what i do */}
           <p>
-            Lately I've been doing full-stack web development. Built a car
-            valuation tool that's running on autogids.be with Docker, CI/CD, the
-            whole setup. Before that it was Python APIs, C# desktop apps, Vue.js
-            frontends, basically whatever the project needed.
+            Lately I've been doing full-stack web development. Built a{" "}
+            <Link href="/projects/valuecheck" className="text-link">car valuation tool</Link> that's
+            running on <a href="https://autogids.be" target="_blank" rel="noreferrer" className="text-link">autogids.be</a> with Docker, CI/CD, the whole setup. Before
+            that it was Python APIs, C# desktop apps, Vue.js frontends, basically
+            whatever the project needed.
           </p>
 
           {/* outside software */}
