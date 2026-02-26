@@ -18,6 +18,15 @@ export default async function ProjectDetail({
     notFound();
   }
 
+  const descriptionParagraphs = Array.isArray(project.longDescription)
+    ? project.longDescription
+    : project.longDescription
+      ? project.longDescription
+          .split("<br>")
+          .map((paragraph) => paragraph.trim())
+          .filter(Boolean)
+      : [];
+
   return (
     <main className="container project-detail-container">
       <h1 className="project-title">{project.title}</h1>
@@ -48,7 +57,9 @@ export default async function ProjectDetail({
         </div>
       </div>
 
-      <p>{project.longDescription}</p>
+      {descriptionParagraphs.map((paragraph, index) => (
+        <p key={index}>{paragraph}</p>
+      ))}
     </main>
   );
 }

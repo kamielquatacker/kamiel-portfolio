@@ -8,7 +8,7 @@ export interface Project {
   githubUrl?: string;
   featured?: boolean;
   // Extra velden voor detail pagina:
-  longDescription?: string;  // Uitgebreide beschrijving
+  longDescription?: string | string[];  // Uitgebreide beschrijving
   date?: string;  // Wanneer gemaakt
 }
 
