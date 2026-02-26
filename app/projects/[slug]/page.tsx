@@ -40,7 +40,6 @@ export default async function ProjectDetail({
 
       <ImageCarousel images={project.images || []} title={project.title} />
 
-      {/* PROJECT DATE AND LINKS  */}
       <div className="project-meta">
         <span className="project-date">{project.date}</span>
         <div className="project-links">

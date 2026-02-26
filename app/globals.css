@@ -242,6 +242,36 @@ a {
   width: 100%;
 }
 
+.project-swiper-shell {
+  position: relative;
+}
+
+.project-swiper-controls {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 12;
+  display: flex;
+  gap: 6px;
+}
+
+.project-swiper-control {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 999px;
+  min-width: 34px;
+  height: 34px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.project-swiper-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
 .project-swiper {
   margin: 24px 0 12px;
   overflow: hidden;
@@ -266,22 +296,51 @@ a {
   border-radius: var(--radius-sm);
 }
 
+.project-swiper-shell--fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.92);
+  padding: 16px;
+}
+
+.project-swiper-shell--fullscreen .project-swiper-controls {
+  top: 16px;
+  right: 16px;
+}
+
+.project-swiper-shell--fullscreen .project-swiper {
+  margin: 0;
+  height: 100%;
+}
+
+.project-swiper-shell--fullscreen .swiper-wrapper,
+.project-swiper-shell--fullscreen .swiper-slide,
+.project-swiper-shell--fullscreen .swiper-zoom-container {
+  height: 100% !important;
+}
+
+.project-swiper-shell--fullscreen .project-swiper-image {
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 0;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   color: white !important;
-  width: 56px !important;
-  height: 56px !important;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 12px;
+  width: 34px !important;
+  height: 34px !important;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 8px;
   border-radius: 50%;
   transition: background 200ms ease-in-out;
 }
-.swiper-button-next {
-  padding-right: 7px;
-}
 
-.swiper-button-prev {
-  padding-left: 7px;
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 13px !important;
+  font-weight: 700;
 }
 
 .swiper-button-next:hover,
