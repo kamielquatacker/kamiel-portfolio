@@ -30,7 +30,7 @@ export const projects: Project[] = [
     description: "The website you're on right now!",
     images: ["/projects/portfolio/main.png", "/projects/portfolio/detail1.png", "/projects/portfolio/detail2.png"],
     technologies: ["Next.js", "TypeScript", "CSS", "Vercel"],
-    liveUrl: "https://kamielquatacker.com",
+    liveUrl: "https://kamielquatacker.dev",
     githubUrl: "https://github.com/kamielquatacker/kamiel-portfolio",
     featured: true,
     longDescription: "This project is my personal portfolio website, built to showcase my skills, experience, and projects. I chose Next.js for its powerful features like server-side rendering and static site generation, which help improve performance and SEO.",
