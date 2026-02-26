@@ -132,9 +132,14 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 24px;
+}
+
+.projects-view-all-mobile {
+  display: none;
+  margin-top: 12px;
+  justify-content: flex-end;
 }
 
 .technologies {
@@ -208,6 +213,24 @@ a {
 .view-all-link:hover {
   border-color: var(--accent);
   color: var(--accent);
+}
+
+.view-all-link-desktop {
+  display: inline-flex;
+}
+
+.view-all-link-mobile {
+  display: inline-flex;
+}
+
+@media (max-width: 700px) {
+  .view-all-link-desktop {
+    display: none;
+  }
+
+  .projects-view-all-mobile {
+    display: flex;
+  }
 }
 
 .project-title {
@@ -595,6 +618,10 @@ a {
 
   .contact-card:hover .contact-card-value-wrapper {
     grid-template-rows: 0fr;
+  }
+
+  .contact-grid{
+    margin-bottom: 5rem;
   }
 }
 

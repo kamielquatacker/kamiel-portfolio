@@ -61,7 +61,7 @@ export default function Home() {
             <FontAwesomeIcon className="section-title-icon" icon={faStar} />
             <span>Featured Projects</span>
           </h2>
-          <a href="/projects" className="view-all-link">
+          <a href="/projects" className="view-all-link view-all-link-desktop">
             <span className="">View all </span>
             <FontAwesomeIcon icon={faArrowRight} />
           </a>
@@ -71,6 +71,13 @@ export default function Home() {
           {featuredProjects.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}
+        </div>
+
+        <div className="projects-view-all-mobile">
+          <a href="/projects" className="view-all-link view-all-link-mobile">
+            <span>View all </span>
+            <FontAwesomeIcon icon={faArrowRight} />
+          </a>
         </div>
       </section>
 
