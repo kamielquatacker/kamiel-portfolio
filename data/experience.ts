@@ -23,7 +23,7 @@ export const experiences: Experience[] = [
       {
         title: "Full Stack Developer",
         period: "Oct 2025 - Jan 2026",
-        description: "Built a web application for real-time vehicle valuations, embedded on Autogids.be and moniteurautomobile.be. Developed multi-step forms with API integrations for vehicle data and pricing calculations.<br>Implemented security measures including rate limiting, bot protection, and IP-based access control to prevent abuse. Added analytics tracking to measure user behavior, API performance, and identify where users drop off in the process.<br> separate databases, reverse proxy setup, and SSL certificates."
+        description: "Built a web application for real-time vehicle valuations, embedded on <a class=\"text-link\" href=\"https://www.autogids.be\" target=\"_blank\" rel=\"noreferrer\">autogids.be</a> and <a class=\"text-link\" href=\"https://www.moniteurautomobile.be\" target=\"_blank\" rel=\"noreferrer\">moniteurautomobile.be</a>. Developed multi-step forms with API integrations for vehicle data and pricing calculations.<br>Implemented security measures including rate limiting, bot protection, and IP-based access control to prevent abuse. Added analytics tracking to measure user behavior, API performance, and identify where users drop off in the process.<br> separate databases, reverse proxy setup, and SSL certificates."
       },
       {
         title: "Job Student (Backend Developer)",
